@@ -5,13 +5,157 @@
 */
 
 @media (min-width: 1024px) {
-  /* .top-navigation .trigram {
+   .top-navigation .trigram {
     display: none;
-  } */
+  } 
 
   /* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
+  
 }
 
 /* 👇👇👇 Add the media rule and the styles that are common within the TABLET and MOBILE views beneath 👇👇👇 */
+@media (max-width: 1023px) {
+  .header-content {
+    border-bottom: 2px solid #F2f2f2;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.1);
+  }
+  .top-navigation ul {
+    display: none;
+  }
+  .portfolio-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .portfolio-item {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .portfolio-item-info {
+    display: flex;
+    flex-direction: column;
+  }
+  .teammates {
+    display: flex;
+    width: 100%;
+  }
+  .teammates-list-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    width: 100%;
+  }
+  .teammate {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .teammate-img-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .teammate-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .teammates-list:before,
+  .teammates-list:after {
+    content: "";
+    width: max-content;
+    min-width: 20px;
+    display: flex;
+    color: #969696;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+  }
+  footer .social-icons > div {
+    width: auto;
+  }
+  footer .social-icons span {
+    display: none;
+    overflow: hidden;
+  }
+  footer .social-icons .icon {
+    background-color: white;
+  }
+  .footer-contacts {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer-contacts .phones {
+    flex-basis: 100%;
+  }
+
+}
 
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
+@media (max-width: 767px) {
+  .portfolio-item {
+    display: flex;
+    flex-direction: column;
+  }
+  .portfolio-item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .teammates-list-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .teammate {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border: 3px solid #979797b2;
+    padding: 15px;
+    gap: 30px;
+    align-items: center;
+  }
+  .teammate-img-wrapper {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+  }
+  .teammate-data {
+    display: flex;
+    align-items: flex-start;
+  }
+  .teammate-info {
+    display: flex;
+    text-align: left;
+  }
+  .teammate-social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  } 
+  .teammates-content .subtext {
+    width: auto;
+  }
+  footer .social-icons span {
+    display: flex;
+    color: white;
+  }
+  footer .social-icons .icon {
+    background-color: white;
+  }
+  footer .social-icons {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
